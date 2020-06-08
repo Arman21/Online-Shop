@@ -1,0 +1,41 @@
+.mainBlock {
+    margin-top:120px 0 50px 0;
+    position:relative;
+}
+.content {
+    padding:10px 30px;
+    width:100%;
+}
+.card {
+    background-color:rgb(212,207,207);
+    margin-bottom:60px;
+    border-bottom-left-radius:25px !important;
+    border-bottom-right-radius:25px !important;
+}
+.blocks {
+    margin-left:82px;
+    border-bottom-left-radius:25px !important;
+    border-bottom-right-radius:25px !important;
+}
+.images {
+    width:286px;
+    height:350px;
+    margin-bottom:30px;
+}
+.title {
+    text-align:center;
+    text-decoration:underline;
+}
+.text {
+    font-size:21px;
+    text-align:center;
+}
+.info {
+    text-align:center;
+    margin-bottom:30px;
+}
+.clickable {
+    padding:12px 25px;
+    border-radius:18px !important;
+    margin-left:30%;
+}

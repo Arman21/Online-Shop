@@ -1,0 +1,13 @@
+.items {
+    color:#fff !important;
+    margin-left:45px !important;
+}
+.activeLink {
+    color:rgb(22,241,40) !important;
+}
+
+@media only screen and (max-width:991px) {
+    .items {
+        margin-left:0 !important;
+    }
+}

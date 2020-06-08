@@ -1,0 +1,13 @@
+.title {
+    text-align:center;
+    text-decoration:underline;
+    cursor:pointer;
+    margin:100px 0;
+    color:#000;
+}
+.content {
+    text-align:center;
+    font-size:20px;
+    margin-bottom:55px;
+    transition:all 1s ease;
+}

@@ -1,0 +1,53 @@
+.messageDiv {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:22px;
+    text-align:center;
+    z-index:999;
+    background-color:rgb(50,216,147);
+    border-top-left-radius:27px;
+    border-top-right-radius:27px;
+    animation-name:anim2;
+    animation-duration:0.7s;
+}
+@keyframes anim2 {
+    from {transform:scale(0.2);}
+    to {transform:scale(1);}
+}
+.message {
+    color:#fff;
+    font-size:17px;
+    text-decoration:underline;
+}
+.message:hover {
+    color:#000;
+}
+.clickable {
+    padding:12px 16px;
+    text-align:center;
+    color:#fff;
+    background-color:rgb(87,212,243);
+    border:1px solid rgb(87,212,243);
+    cursor:pointer;
+    font-size:16px;
+    border-radius:15px;
+    margin-left:0;
+}
+.clickable:hover {
+    color:#000;
+}
+.button2 {
+    background-color:rgb(243,74,44);
+    border:1px solid rgb(243,74,44);
+    margin-left:6%;
+}
+.clickable:active {
+    border:5px solid #fff;
+}
+.titleSecond {
+    color : #fff;
+    font-size:18px;
+    text-align:center;
+}

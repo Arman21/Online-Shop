@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+<div class="messageDiv" *ngIf="storage2.toShow">
+    <p class="titleSecond">MESSAGE</p>
+    <p class="message">
+        {{ storage2.messageText }}
+    </p>
+    <button type="button" class="clickable" title="click here" (click)="storage2.sendDates()">ACCEPT</button>
+    <button type="button" class="clickable button2" title="click here" (click)="storage2.toRemove()">
+        CANCEL
+    </button>
+</div>

@@ -1,0 +1,10 @@
+.mainBlock {
+    margin:150px auto;
+    padding:25px 30px;
+    text-align:center;
+}
+.content {
+    font-size:21px;
+    margin-bottom:50px;
+    color:#fff;
+}

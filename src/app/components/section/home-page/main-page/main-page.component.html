@@ -1,0 +1,41 @@
+<div class="basketDiv" data-toggle="modal" data-target="#exampleModal">
+    <img src="../../../assets/Images/basket.png" alt="basket_pic" class="basket" title="Your goods">
+    <div *ngIf="toShow" class="quantity" title="Quantity">
+        <p class="val" id="val">{{ storage1.num }}</p>
+    </div>
+</div>
+<div *ngIf="toShow" class="modal modalMessage" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" [style.text-decoration]="line">Your Goods</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" title="Close">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div *ngFor="let item of goodsArray ; let i = index" class="goods">
+                    <div class="phone_block" title="Samsung">
+                        <img [src]="item.src" [alt]="item.alt" class="phone_img">
+                    </div>
+                    <div class="phone_block">
+                        <p class="text">{{ item.title }}</p>
+                        <p class="text">{{ item.price }} AMD</p>
+                    </div>
+                    <div class="phone_block2">
+                        <p class="text">{{ quantity }} phone</p>
+                        <p class="text remove" title="Delete phone" (click)="removeItem(i,icon)" #icon>X</p>
+                    </div>
+                </div>
+                <h5 class="total">Total Price : {{ price }} AMD</h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Order</button>
+                <button type="button" class="btn btn-danger" (click)="clearAll(button)" #button>Delete</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-products (event)="getInfo($event)"></app-products>

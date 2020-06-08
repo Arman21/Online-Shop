@@ -1,0 +1,19 @@
+<div class="container-fluid mainBlock">
+    <div *ngFor="let elem of storage1.productsArray ; let i = index" class="row content">
+        <div *ngFor="let item of storage1.productsArray[i] ; let j = index" class="col-lg blocks">
+            <div class="card" style="width:18rem;">
+                <a [routerLink]="['/home-page/mobile-page',item.id]">
+                    <img [src]="item.src" class="card-img-top images" [alt]="item.alt">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title title">{{ item.title }}</h5>
+                    <p class="card-text text">{{ item.text }} : {{ item.number }}</p>
+                    <p class="card-text info">{{ item.info }}</p>
+                    <p class="btn btn-primary clickable" title="Click for buy" (click)="sendInfo(item)">
+                        {{ item.action }}
+                    </p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
